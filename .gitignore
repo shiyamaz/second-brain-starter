@@ -1,0 +1,15 @@
+# Obsidian の端末ごとの状態（共有しない）
+.obsidian/workspace*.json
+.obsidian/cache
+.obsidian/plugins/*/data.json
+
+# ゴミ箱
+.trash/
+
+# OS が作るファイル
+.DS_Store
+Thumbs.db
+
+# 秘密情報（誤ってVaultに置いた場合の保険）
+.env
+*.key
