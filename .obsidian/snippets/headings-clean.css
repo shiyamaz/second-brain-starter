@@ -1,0 +1,584 @@
+/* Apple HIG風 — テキスト・見出し・全体トーン（ライトモード専用） */
+
+/* ===== フォント — SF Pro + Hiragino Sans（Apple日本語サイトと同じ） ===== */
+body {
+  --font-text-override: "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  --font-editor-override: "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  --font-interface-override: "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+/* ===== 本文のテキストカラー ===== */
+.theme-light {
+  --text-normal: #1d1d1f;
+  --text-muted: #86868b;
+  --text-faint: #aeaeb2;
+}
+
+/* ===== インラインタイトル ===== */
+.inline-title {
+  font-size: 1.125em !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.03em;
+  color: #1d1d1f !important;
+  margin-bottom: 8px !important;
+}
+
+/* ===== frontmatterをシステムゾーン化 ===== */
+.metadata-container {
+  background-color: #f5f5f7;
+  border: 1px solid #e8e8ed;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 32px;
+}
+
+.metadata-container .metadata-property-key {
+  color: #86868b;
+  font-size: 0.85em;
+}
+
+.metadata-container .metadata-property-value {
+  color: #1d1d1f;
+}
+
+/* ===== リンク — 控えめに。色の主役はIconic ===== */
+.theme-light {
+  --link-color: #1d1d1f;
+  --link-color-hover: #424245;
+  --link-external-color: #1d1d1f;
+  --link-external-color-hover: #424245;
+}
+
+.theme-light .markdown-rendered a,
+.theme-light .cm-hmd-internal-link {
+  text-decoration: underline;
+  text-decoration-color: #d2d2d7;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+.theme-light .markdown-rendered a:hover,
+.theme-light .cm-hmd-internal-link:hover {
+  text-decoration-color: #86868b;
+}
+
+/* ===== 見出し ===== */
+
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6 {
+  color: #1d1d1f !important;
+}
+
+/* H1 */
+.markdown-rendered h1 {
+  font-size: 1.4em;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  padding-bottom: 10px;
+  border-bottom: 1.5px solid #d2d2d7;
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+
+/* H2 */
+.markdown-rendered h2 {
+  font-size: 1.15em;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #d2d2d7;
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+
+/* H3 */
+.markdown-rendered h3 {
+  font-size: 1.0em;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+/* H4 */
+.markdown-rendered h4 {
+  font-size: 0.95em;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-top: 24px;
+  margin-bottom: 6px;
+}
+
+/* H5 — ラベル */
+.markdown-rendered h5 {
+  font-size: 0.82em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #86868b !important;
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+/* H6 — 補足 */
+.markdown-rendered h6 {
+  font-size: 0.78em;
+  font-weight: 500;
+  color: #aeaeb2 !important;
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+
+/* ===== --- (hr) 点線で控えめに ===== */
+.markdown-rendered hr {
+  border: none;
+  border-top: 1px dashed #d2d2d7;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+/* ===== 段落間の余白 ===== */
+.markdown-rendered p {
+  margin-bottom: 1.2em;
+}
+
+/* ===== 太字 — semibold (600) で品よく ===== */
+.theme-light {
+  --bold-weight: 600;
+}
+
+strong,
+.cm-strong {
+  font-weight: 600;
+}
+
+/* ===== リスト行間を広げる ===== */
+.markdown-rendered ul > li,
+.markdown-rendered ol > li {
+  padding-top: 0.15em;
+  padding-bottom: 0.15em;
+}
+
+.markdown-rendered li li {
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+}
+
+/* ===== コードブロック — ウィンドウ風（テーブルヘッダー統一） ===== */
+/*
+  タイトルバー = テーブルヘッダーと同じ #f5f5f7 背景
+  ドット = テーブルヘッダーテキストと同じ #86868b（0.5pxフェザーでAA）
+  本体 = 白、ボーダー = テーブルと同じ #d2d2d7
+  インラインコード = #eceef2 クールブルーグレーのピル
+*/
+
+.theme-light {
+  --code-background: #ffffff;
+  --font-monospace-override: "SF Mono", "JetBrains Mono", "Fira Code", "Cascadia Code", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+/* インラインコード — クールブルーグレーのピル */
+.markdown-rendered code,
+.cm-s-obsidian span.cm-inline-code {
+  background-color: #eceef2;
+  color: #1d1d1f;
+  border: none;
+  border-radius: 5px;
+  padding: 0.15em 0.45em;
+  font-size: 0.86em;
+  font-family: "SF Mono", "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* ブロックコード — テーブルと同じボーダー、影なし */
+.markdown-rendered pre {
+  position: relative;
+  background-color: #ffffff !important;
+  border: 1px solid #d2d2d7;
+  border-radius: 8px;
+  padding: 48px 20px 16px 20px !important;
+  line-height: 1.55;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+/* タイトルバー — テーブルヘッダーと統一 36px */
+.markdown-rendered pre::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 36px;
+  z-index: 1;
+  border-bottom: 1px solid #d2d2d7;
+  border-radius: 8px 8px 0 0;
+  /* ドット: 半径6px + 0.5pxフェザーでアンチエイリアス */
+  background-image:
+    radial-gradient(circle at 22px 18px, #86868b 5.5px, transparent 6px),
+    radial-gradient(circle at 44px 18px, #86868b 5.5px, transparent 6px),
+    radial-gradient(circle at 66px 18px, #86868b 5.5px, transparent 6px);
+  background-repeat: no-repeat;
+  background-color: #f5f5f7;
+}
+
+/* エディタービュー用 */
+.cm-s-obsidian .HyperMD-codeblock-bg {
+  background-color: #ffffff !important;
+  border: none;
+}
+
+/* pre 内の code はリセット */
+.markdown-rendered pre code {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font-size: 0.86em;
+  font-family: "SF Mono", "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, Menlo, monospace;
+  color: #24292f;
+  line-height: inherit;
+}
+
+/* 言語名ラベル — タイトルバー中央 */
+.markdown-rendered .code-block-flair {
+  position: absolute !important;
+  z-index: 2 !important;
+  top: 9px !important;
+  left: 50% !important;
+  right: auto !important;
+  transform: translateX(-50%) !important;
+  color: #86868b !important;
+  font-size: 0.70em !important;
+  font-weight: 500;
+  font-family: "SF Pro Text", -apple-system, sans-serif;
+  letter-spacing: 0;
+  text-transform: none;
+  background: transparent !important;
+  pointer-events: none;
+}
+
+/* コピーボタン — タイトルバー右端 */
+.markdown-rendered .copy-code-button {
+  z-index: 2 !important;
+  color: #aeaeb2;
+  background: transparent;
+  top: 6px;
+}
+
+.markdown-rendered .copy-code-button:hover {
+  color: #86868b;
+}
+
+/* ===== シンタックスハイライト — GitHub Light 準拠 ===== */
+/*
+  github.com のコードビューで使われている配色。
+  白背景で自然に読めるバランスの良いカラースキーム。
+
+  キーワード      #cf222e  レッド
+  文字列          #0a3069  ダークブルー
+  コメント        #6e7781  グレー
+  数値・定数      #0550ae  ブルー
+  関数            #8250df  パープル
+  型・クラス      #953800  オレンジブラウン
+  プロパティ      #0550ae  ブルー
+  HTMLタグ        #116329  グリーン
+  演算子          #cf222e  レッド
+  句読点          #24292f  デフォルトテキスト
+*/
+
+/* --- リーディングビュー（Prism.js tokens） --- */
+
+/* キーワード */
+.theme-light .markdown-rendered pre code .token.keyword,
+.theme-light .markdown-rendered pre code .token.bold {
+  color: #cf222e;
+}
+
+/* 文字列 */
+.theme-light .markdown-rendered pre code .token.string,
+.theme-light .markdown-rendered pre code .token.char,
+.theme-light .markdown-rendered pre code .token.regex {
+  color: #0a3069;
+}
+
+/* コメント */
+.theme-light .markdown-rendered pre code .token.comment,
+.theme-light .markdown-rendered pre code .token.prolog,
+.theme-light .markdown-rendered pre code .token.doctype,
+.theme-light .markdown-rendered pre code .token.cdata {
+  color: #6e7781;
+  font-style: italic;
+}
+
+/* 数値 */
+.theme-light .markdown-rendered pre code .token.number {
+  color: #0550ae;
+}
+
+/* ブーリアン・定数 */
+.theme-light .markdown-rendered pre code .token.boolean,
+.theme-light .markdown-rendered pre code .token.constant,
+.theme-light .markdown-rendered pre code .token.nil {
+  color: #0550ae;
+}
+
+/* 関数名 */
+.theme-light .markdown-rendered pre code .token.function {
+  color: #8250df;
+}
+
+/* クラス名・型名 */
+.theme-light .markdown-rendered pre code .token.class-name,
+.theme-light .markdown-rendered pre code .token.builtin {
+  color: #953800;
+}
+
+/* シンボル */
+.theme-light .markdown-rendered pre code .token.symbol {
+  color: #0550ae;
+}
+
+/* プロパティ */
+.theme-light .markdown-rendered pre code .token.property {
+  color: #0550ae;
+}
+
+/* HTML/XMLタグ */
+.theme-light .markdown-rendered pre code .token.tag {
+  color: #116329;
+}
+
+/* HTML属性名 */
+.theme-light .markdown-rendered pre code .token.attr-name {
+  color: #0550ae;
+}
+
+/* HTML属性値 */
+.theme-light .markdown-rendered pre code .token.attr-value {
+  color: #0a3069;
+}
+
+/* 演算子 */
+.theme-light .markdown-rendered pre code .token.operator {
+  color: #cf222e;
+}
+
+/* 句読点 */
+.theme-light .markdown-rendered pre code .token.punctuation {
+  color: #24292f;
+}
+
+/* @ルール・important（CSS） */
+.theme-light .markdown-rendered pre code .token.atrule,
+.theme-light .markdown-rendered pre code .token.important {
+  color: #cf222e;
+}
+
+/* セレクタ（CSS） */
+.theme-light .markdown-rendered pre code .token.selector {
+  color: #116329;
+}
+
+/* --- エディタービュー（CodeMirror classes） --- */
+
+/* キーワード */
+.theme-light .cm-s-obsidian .HyperMD-codeblock .cm-keyword {
+  color: #cf222e !important;
+}
+
+/* 文字列 */
+.theme-light .cm-s-obsidian .HyperMD-codeblock .cm-string,
+.theme-light .cm-s-obsidian .HyperMD-codeblock .cm-string-2 {
+  color: #0a3069 !important;
+}
+
+/* コメント */
+.theme-light .cm-s-obsidian .HyperMD-codeblock .cm-comment {
+  color: #6e7781 !important;
+  font-style: italic;
+}
+
+/* 数値 */
+.theme-light .cm-s-obsidian .HyperMD-codeblock .cm-number {
+  color: #0550ae !important;
+}
+
+/* 変数定義 */
+.theme-light .cm-s-obsidian .HyperMD-codeblock .cm-def {
+  color: #8250df !important;
+}
+
+/* 変数 */
+.theme-light .cm-s-obsidian .HyperMD-codeblock .cm-variable,
+.theme-light .cm-s-obsidian .HyperMD-codeblock .cm-variable-2,
+.theme-light .cm-s-obsidian .HyperMD-codeblock .cm-variable-3 {
+  color: #24292f !important;
+}
+
+/* 型名 */
+.theme-light .cm-s-obsidian .HyperMD-codeblock .cm-type {
+  color: #953800 !important;
+}
+
+/* プロパティ */
+.theme-light .cm-s-obsidian .HyperMD-codeblock .cm-property {
+  color: #0550ae !important;
+}
+
+/* ビルトイン */
+.theme-light .cm-s-obsidian .HyperMD-codeblock .cm-builtin {
+  color: #953800 !important;
+}
+
+/* atom (true, false, null) */
+.theme-light .cm-s-obsidian .HyperMD-codeblock .cm-atom {
+  color: #0550ae !important;
+}
+
+/* 演算子 */
+.theme-light .cm-s-obsidian .HyperMD-codeblock .cm-operator {
+  color: #cf222e !important;
+}
+
+/* HTMLタグ */
+.theme-light .cm-s-obsidian .HyperMD-codeblock .cm-tag {
+  color: #116329 !important;
+}
+
+/* HTML属性 */
+.theme-light .cm-s-obsidian .HyperMD-codeblock .cm-attribute {
+  color: #0550ae !important;
+}
+
+/* メタ（シェバン等） */
+.theme-light .cm-s-obsidian .HyperMD-codeblock .cm-meta {
+  color: #cf222e !important;
+}
+
+/* qualifier */
+.theme-light .cm-s-obsidian .HyperMD-codeblock .cm-qualifier {
+  color: #953800 !important;
+}
+
+/* ===== Callout — 背景・ボーダー・アイコン全体にうっすら色 ===== */
+
+/* ベーススタイル（全Callout共通） */
+.markdown-rendered .callout {
+  border-radius: 8px;
+  padding: 12px 16px;
+  --callout-blend-mode: normal;
+  background-color: #f4f4f6;
+  border: 1px solid #dcdce0;
+}
+
+.markdown-rendered .callout .callout-title {
+  color: #1d1d1f;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.markdown-rendered .callout .callout-title-inner {
+  color: #1d1d1f;
+  font-weight: 600;
+}
+
+.markdown-rendered .callout .callout-content {
+  color: #1d1d1f;
+}
+
+.markdown-rendered .callout[data-callout] {
+  --callout-color: 160, 160, 168;
+}
+
+/* グレー系 */
+.markdown-rendered .callout[data-callout="note"],
+.markdown-rendered .callout[data-callout="info"],
+.markdown-rendered .callout[data-callout="todo"],
+.markdown-rendered .callout[data-callout="abstract"],
+.markdown-rendered .callout[data-callout="summary"],
+.markdown-rendered .callout[data-callout="tldr"],
+.markdown-rendered .callout[data-callout="quote"],
+.markdown-rendered .callout[data-callout="cite"] {
+  background-color: #f4f4f6;
+  border-color: #dcdce0;
+  --callout-color: 160, 160, 168;
+}
+
+/* ブルー系 */
+.markdown-rendered .callout[data-callout="tip"],
+.markdown-rendered .callout[data-callout="hint"],
+.markdown-rendered .callout[data-callout="important"] {
+  background-color: #f0f4f8;
+  border-color: #cdd8e4;
+  --callout-color: 122, 154, 181;
+}
+
+/* グリーン系 */
+.markdown-rendered .callout[data-callout="success"],
+.markdown-rendered .callout[data-callout="check"],
+.markdown-rendered .callout[data-callout="done"] {
+  background-color: #f0f6f2;
+  border-color: #cde0d4;
+  --callout-color: 122, 171, 138;
+}
+
+/* イエロー系 */
+.markdown-rendered .callout[data-callout="question"],
+.markdown-rendered .callout[data-callout="help"],
+.markdown-rendered .callout[data-callout="faq"],
+.markdown-rendered .callout[data-callout="warning"],
+.markdown-rendered .callout[data-callout="caution"],
+.markdown-rendered .callout[data-callout="attention"] {
+  background-color: #f8f6ee;
+  border-color: #e4dfc8;
+  --callout-color: 181, 164, 106;
+}
+
+/* レッド系 */
+.markdown-rendered .callout[data-callout="danger"],
+.markdown-rendered .callout[data-callout="error"],
+.markdown-rendered .callout[data-callout="failure"],
+.markdown-rendered .callout[data-callout="fail"],
+.markdown-rendered .callout[data-callout="missing"],
+.markdown-rendered .callout[data-callout="bug"] {
+  background-color: #f8f0f0;
+  border-color: #e4cdcd;
+  --callout-color: 176, 122, 122;
+}
+
+/* パープル系 */
+.markdown-rendered .callout[data-callout="example"] {
+  background-color: #f4f0f8;
+  border-color: #dbd2e4;
+  --callout-color: 154, 133, 176;
+}
+
+/* ===== タグピル ===== */
+.theme-light .tag {
+  color: #86868b;
+}
+
+/* ===== モバイル — テキストの横溢れ防止 ===== */
+@media (max-width: 768px) {
+  .markdown-rendered p,
+  .markdown-rendered li,
+  .markdown-rendered .block-language-dataviewjs p,
+  .markdown-rendered .block-language-dataviewjs,
+  .markdown-rendered .callout-content {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .block-language-dataviewjs p {
+    overflow-wrap: break-word !important;
+    word-break: break-word !important;
+    max-width: 100% !important;
+  }
+
+  .markdown-rendered pre {
+    padding: 40px 14px 12px 14px !important;
+  }
+}

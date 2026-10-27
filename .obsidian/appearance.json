@@ -1,0 +1,12 @@
+{
+  "cssTheme": "Minimal",
+  "translucency": true,
+  "theme": "moonstone",
+  "accentColor": "#676b6f",
+  "enabledCssSnippets": [
+    "headings-clean",
+    "sidebar-spacing",
+    "table-mac-style",
+    "sidebar-unified"
+  ]
+}

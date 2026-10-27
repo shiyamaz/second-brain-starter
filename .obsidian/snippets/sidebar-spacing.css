@@ -1,0 +1,12 @@
+/* サイドバーの行間を少し広げる */
+.nav-file-title,
+.nav-folder-title {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+/* ブックマークも同様 */
+.tree-item-self {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}

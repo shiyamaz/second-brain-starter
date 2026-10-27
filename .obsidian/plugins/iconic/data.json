@@ -1,0 +1,153 @@
+{
+  "biggerIcons": "mobile",
+  "clickableIcons": "desktop",
+  "showAllFileIcons": true,
+  "showAllFolderIcons": true,
+  "minimalFolderIcons": false,
+  "showMarkdownTabIcons": true,
+  "showTitleIcons": true,
+  "showTagPillIcons": false,
+  "showMenuActions": true,
+  "showSuggestionIcons": false,
+  "showQuickSwitcherIcons": true,
+  "showMoveFileIcons": true,
+  "showItemName": "desktop",
+  "useSearchKeywords": "on",
+  "maxSearchResults": 50,
+  "colorPicker1": "list",
+  "colorPicker2": "rgb",
+  "uncolorHover": false,
+  "uncolorDrag": false,
+  "uncolorSelect": false,
+  "uncolorQuick": false,
+  "maxBackups": 5,
+  "dialogState": {
+    "iconMode": true,
+    "emojiMode": true,
+    "rulePage": "file"
+  },
+  "appIcons": {},
+  "tabIcons": {},
+  "fileIcons": {
+    "00_AI": {
+      "icon": "lucide-bot",
+      "color": "#e85d75"
+    },
+    "01_MANUALS": {
+      "icon": "lucide-book-open",
+      "color": "#e8733d"
+    },
+    "02_DAILY": {
+      "icon": "lucide-calendar-days",
+      "color": "#d4a017"
+    },
+    "10_INBOX": {
+      "icon": "lucide-inbox",
+      "color": "#8db83e"
+    },
+    "20_PERSONAL": {
+      "icon": "lucide-user-round",
+      "color": "#3ead5c"
+    },
+    "30_WORK": {
+      "icon": "lucide-briefcase",
+      "color": "#3b82c4"
+    },
+    "30_WORK/projects": {
+      "icon": "lucide-folder-kanban",
+      "color": "#3b82c4"
+    },
+    "50_PEOPLE": {
+      "icon": "lucide-users",
+      "color": "#5b6abf"
+    },
+    "60_ORGANIZATIONS": {
+      "icon": "lucide-share-2",
+      "color": "#7c5bbf"
+    },
+    "70_TOPICS": {
+      "icon": "lucide-hash",
+      "color": "#9b59b6"
+    },
+    "80_LIBRARY": {
+      "icon": "lucide-bookmark",
+      "color": "#c75b9b"
+    },
+    "90_ARCHIVE": {
+      "icon": "lucide-archive",
+      "color": "#9e9e9e"
+    },
+    "99_TEMPLATES": {
+      "icon": "lucide-layout-template",
+      "color": "#787878"
+    },
+    "Home.md": {
+      "icon": "lucide-layout-grid",
+      "color": "gray"
+    },
+    "README.md": {
+      "icon": "lucide-info",
+      "color": "gray"
+    },
+    "20_PERSONAL/家族": {
+      "icon": "lucide-heart",
+      "color": "#3ead5c"
+    },
+    "20_PERSONAL/医療・健康": {
+      "icon": "lucide-stethoscope",
+      "color": "#3ead5c"
+    },
+    "20_PERSONAL/保険": {
+      "icon": "lucide-shield-check",
+      "color": "#3ead5c"
+    },
+    "20_PERSONAL/財務": {
+      "icon": "lucide-wallet",
+      "color": "#3ead5c"
+    },
+    "20_PERSONAL/税務": {
+      "icon": "lucide-receipt",
+      "color": "#3ead5c"
+    },
+    "20_PERSONAL/住まい": {
+      "icon": "lucide-house",
+      "color": "#3ead5c"
+    },
+    "20_PERSONAL/車・乗り物": {
+      "icon": "lucide-car",
+      "color": "#3ead5c"
+    },
+    "20_PERSONAL/教育・子育て": {
+      "icon": "lucide-graduation-cap",
+      "color": "#3ead5c"
+    },
+    "20_PERSONAL/仕事・キャリア": {
+      "icon": "lucide-brain",
+      "color": "#3ead5c"
+    },
+    "20_PERSONAL/旅行": {
+      "icon": "lucide-plane",
+      "color": "#3ead5c"
+    },
+    "20_PERSONAL/趣味": {
+      "icon": "lucide-mountain",
+      "color": "#3ead5c"
+    },
+    "20_PERSONAL/アカウント・契約": {
+      "icon": "lucide-key-round",
+      "color": "#3ead5c"
+    },
+    "20_PERSONAL/もしもの時": {
+      "icon": "lucide-life-buoy",
+      "color": "#3ead5c"
+    }
+  },
+  "bookmarkIcons": {},
+  "tagIcons": {},
+  "propertyIcons": {},
+  "ribbonIcons": {},
+  "fileRules": [],
+  "folderRules": [],
+  "biggerSearchResults": "mobile",
+  "rememberDeletedItems": false
+}

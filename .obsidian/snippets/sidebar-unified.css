@@ -1,0 +1,15 @@
+/* サイドバー左右の背景色を統一 */
+
+/* Minimalはデフォルトで右サイドバーを白にするので、左と同じグレーに揃える */
+.theme-light .mod-right-split {
+  --background-secondary: var(--bg2);
+}
+
+.theme-light .mod-right-split :not(.mod-top) .workspace-tab-header-container {
+  --tab-container-background: var(--bg2);
+}
+
+/* 右サイドバー内のコンテンツ背景も揃える */
+.theme-light .mod-right-split .view-content {
+  background-color: var(--bg2);
+}

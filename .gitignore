@@ -1,7 +1,12 @@
 # Obsidian の端末ごとの状態（共有しない）
 .obsidian/workspace*.json
 .obsidian/cache
-.obsidian/plugins/*/data.json
+
+# ユーザーが入れたプラグイン本体・テーマ（設定 data.json と snippets は同梱するのでコミットする）
+.obsidian/plugins/*/main.js
+.obsidian/plugins/*/manifest.json
+.obsidian/plugins/*/styles.css
+.obsidian/themes/
 
 # ゴミ箱
 .trash/

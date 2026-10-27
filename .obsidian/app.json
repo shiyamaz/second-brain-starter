@@ -1,0 +1,17 @@
+{
+  "alwaysUpdateLinks": true,
+  "defaultViewMode": "preview",
+  "promptDelete": false,
+  "openBehavior": "",
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "showUnsupportedFiles": true,
+  "newLinkFormat": "relative",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "10_INBOX",
+  "attachmentFolderPath": "80_LIBRARY/attachments"
+}
