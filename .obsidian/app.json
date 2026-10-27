@@ -14,5 +14,5 @@
   "newLinkFormat": "relative",
   "newFileLocation": "folder",
   "newFileFolderPath": "10_INBOX",
-  "attachmentFolderPath": "80_LIBRARY/attachments"
+  "attachmentFolderPath": "./attachments"
 }

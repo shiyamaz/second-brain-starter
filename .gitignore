@@ -29,7 +29,7 @@ Thumbs.db
 # あなたが書いたノートは Git に入らなくなります。
 # 20_PERSONAL から AI が集計したレポート（00_AI/reports/personal/）も一緒に外れます。
 # 注意: すでにコミット済みのノートは、これだけでは消えません（履歴に残ります）。
-#       20_PERSONAL の PDF・画像も外したいときは、いちばん下の 5 行の「# 」も外してください。
+#       20_PERSONAL の PDF・画像（ノートの隣の attachments/ フォルダの添付ファイルを含む）も外したいときは、いちばん下の 6 行の「# 」も外してください。
 # ----------------------------------------------------------------------
 # 20_PERSONAL/**/*.md
 # !20_PERSONAL/20_PERSONAL.md
@@ -55,3 +55,4 @@ Thumbs.db
 # 20_PERSONAL/**/*.jpg
 # 20_PERSONAL/**/*.jpeg
 # 20_PERSONAL/**/*.heic
+# 20_PERSONAL/**/attachments/**
