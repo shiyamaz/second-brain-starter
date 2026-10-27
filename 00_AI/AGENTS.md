@@ -12,11 +12,13 @@
 | 引き継ぎメモ | `handoffs/` | `20261027_INBOX整理の続き.md` |
 | 作業ログ・定期実行の記録 | `logs/` | `20261027_inbox_triage.md`（同じ処理の記録は1ファイルに追記でもOK） |
 | 調査・集計・まとめ・振り返り | `reports/` | `20261027_週次振り返り.md` |
-| スクリプト | `scripts/` | `rename_daily_notes.py`（先頭コメントに目的と使い方を書く） |
+| `20_PERSONAL/` から集計したもの（医療費・保険料・サブスク・資産など） | `reports/personal/` | `20261027_医療費集計_2026.md` |
+| スクリプト | `scripts/` | `rename_daily_notes.py`（先頭コメントに目的・使い方・作成日を書く） |
 | よく使う依頼文 | `prompts/` | `INBOX整理.md` |
 
 - ファイル名は `YYYYMMDD_内容` を基本にする（日付順に並ぶため）
-- ここに置いたものにも frontmatter（`created` / `updated` / `type` / `tags`）を付ける
+- ここに置いた **Markdown ノート**（`.md`）には frontmatter（`created` / `updated` / `type` / `tags`）を付ける
+- **スクリプト**には frontmatter を付けず、先頭のコメントに「目的・使い方・作成日」を書く
 - 人・組織・テーマについて分かったことは、レポートに書くだけでなく、該当する `50_PEOPLE/` 等のノートへの反映を提案する
 - 引き継ぎメモには「やったこと / 現在の状態 / 次にやること / 注意点」を書く
-- `20_PERSONAL/` の集計レポートには、元ノートへのリンクと計算日を付ける（詳細: `20_PERSONAL/AGENTS.md`）
+- `20_PERSONAL/` の集計レポートは `reports/personal/` に置き、元ノートへのリンクと計算日を付ける（詳細: `20_PERSONAL/AGENTS.md`）

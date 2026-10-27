@@ -1,6 +1,7 @@
 {
   "alwaysUpdateLinks": true,
-  "defaultViewMode": "preview",
+  "defaultViewMode": "source",
+  "livePreview": true,
   "promptDelete": true,
   "openBehavior": "",
   "pdfExportSettings": {

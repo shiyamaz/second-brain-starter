@@ -24,11 +24,12 @@ Thumbs.db
 # ----------------------------------------------------------------------
 # 【任意】20_PERSONAL の中身を Git に入れない（初期状態はオフ）
 # GitHub などでバックアップしつつ、暮らしの情報だけは手元に残したい人向けです。
-# 使うときは、下の行の先頭の「# 」を外してください。
+# 使うときは、下の「20_PERSONAL/**/*.md」から「!00_AI/reports/personal/.gitkeep」までの行の先頭の「# 」を外してください。
 # フォルダの説明ノート（<フォルダ名>.md）と AGENTS.md / CLAUDE.md だけは残り、
 # あなたが書いたノートは Git に入らなくなります。
+# 20_PERSONAL から AI が集計したレポート（00_AI/reports/personal/）も一緒に外れます。
 # 注意: すでにコミット済みのノートは、これだけでは消えません（履歴に残ります）。
-#       PDF・画像なども除外したいときは「20_PERSONAL/**/*.pdf」などの行を足してください。
+#       20_PERSONAL の PDF・画像も外したいときは、いちばん下の 5 行の「# 」も外してください。
 # ----------------------------------------------------------------------
 # 20_PERSONAL/**/*.md
 # !20_PERSONAL/20_PERSONAL.md
@@ -47,3 +48,10 @@ Thumbs.db
 # !20_PERSONAL/財務/財務.md
 # !20_PERSONAL/趣味/趣味.md
 # !20_PERSONAL/車・乗り物/車・乗り物.md
+# 00_AI/reports/personal/**
+# !00_AI/reports/personal/.gitkeep
+# 20_PERSONAL/**/*.pdf
+# 20_PERSONAL/**/*.png
+# 20_PERSONAL/**/*.jpg
+# 20_PERSONAL/**/*.jpeg
+# 20_PERSONAL/**/*.heic
