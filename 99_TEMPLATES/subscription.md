@@ -1,6 +1,6 @@
 ---
-created: {{date:YYYY-MM-DDTHH:mm:ssZ}}
-updated: {{date:YYYY-MM-DDTHH:mm:ssZ}}
+created: "{{date:YYYY-MM-DDTHH:mm:ssZ}}"
+updated: "{{date:YYYY-MM-DDTHH:mm:ssZ}}"
 type: subscription
 service:
 monthly_fee:
@@ -32,5 +32,5 @@ tags:
 
 ## 関連
 
-- [[サブスク一覧]]
+- [[アカウント・契約]]
 - [[もしもの時]]

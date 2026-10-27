@@ -1,6 +1,6 @@
 ---
-date: {{date:YYYY-MM-DD}}
-created: {{date:YYYY-MM-DDTHH:mm:ssZ}}
+date: "{{date:YYYY-MM-DD}}"
+created: "{{date:YYYY-MM-DDTHH:mm:ssZ}}"
 type: daily
 tags:
   - daily
@@ -18,7 +18,7 @@ tags:
 
 ## 会った人・話したこと
 
-- [[]]
+- （会った人のノートへのリンク）
 
 ## ふりかえり
 

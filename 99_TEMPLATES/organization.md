@@ -1,6 +1,6 @@
 ---
-created: {{date:YYYY-MM-DDTHH:mm:ssZ}}
-updated: {{date:YYYY-MM-DDTHH:mm:ssZ}}
+created: "{{date:YYYY-MM-DDTHH:mm:ssZ}}"
+updated: "{{date:YYYY-MM-DDTHH:mm:ssZ}}"
 type: organization
 name:
 industry:
@@ -18,11 +18,11 @@ tags:
 
 ## 関係者
 
-- [[]]
+- （関係者のノートへのリンク）
 
 ## 関連テーマ
 
-- [[]]
+- （関連テーマのノートへのリンク）
 
 ## 出来事
 

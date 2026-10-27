@@ -1,6 +1,6 @@
 ---
-created: {{date:YYYY-MM-DDTHH:mm:ssZ}}
-updated: {{date:YYYY-MM-DDTHH:mm:ssZ}}
+created: "{{date:YYYY-MM-DDTHH:mm:ssZ}}"
+updated: "{{date:YYYY-MM-DDTHH:mm:ssZ}}"
 type: trip
 destination:
 start_date:
@@ -16,7 +16,7 @@ tags:
 
 - 行き先:
 - 期間:
-- 同行者: [[]]
+- 同行者: （家族・人のノートへのリンク）
 
 ## 行程
 

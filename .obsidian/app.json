@@ -1,7 +1,7 @@
 {
   "alwaysUpdateLinks": true,
   "defaultViewMode": "preview",
-  "promptDelete": false,
+  "promptDelete": true,
   "openBehavior": "",
   "pdfExportSettings": {
     "pageSize": "A4",

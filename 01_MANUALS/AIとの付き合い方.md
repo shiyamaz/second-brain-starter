@@ -1,6 +1,6 @@
 ---
 created: 2026-10-27T16:40:00+09:00
-updated: 2026-10-27T16:40:00+09:00
+updated: 2026-10-27T17:02:56+09:00
 type: manual
 tags:
   - manual
@@ -39,11 +39,12 @@ AI 初心者向けに、このVaultでの AI の使い方の考え方をまと�
 - パスワード・口座番号・マイナンバーなどを Vault に書く
 - 会社で持ち出し禁止の情報を Vault に入れる
 - AI の出力を確認せずに社外へ送る
+- クラウドの AI（Claude・Codex など）にノートを読ませると、その内容は AI の提供元に送られます。医療・家族などのノートを読ませる前に、README の「AIに個人情報を読ませる前に」を確認する
 
 ## AI が守るルールはどこにある？
 
 - 全 AI 共通: ルートの `AGENTS.md`
 - Claude Code 向けの補足: ルートの `CLAUDE.md`
-- フォルダごとの注意: `20_PERSONAL/CLAUDE.md`・`30_WORK/CLAUDE.md`・`00_AI/CLAUDE.md`
+- フォルダごとの注意（全 AI 共通）: `20_PERSONAL/AGENTS.md`・`30_WORK/AGENTS.md`・`00_AI/AGENTS.md`（同じフォルダの `CLAUDE.md` はこれを読み込むだけ）
 
 ルールを変えたくなったら、`AGENTS.md` を書き換えるだけで、どの AI にも反映されます。

@@ -1,6 +1,6 @@
 ---
-created: {{date:YYYY-MM-DDTHH:mm:ssZ}}
-updated: {{date:YYYY-MM-DDTHH:mm:ssZ}}
+created: "{{date:YYYY-MM-DDTHH:mm:ssZ}}"
+updated: "{{date:YYYY-MM-DDTHH:mm:ssZ}}"
 type: project
 status: active
 organization:
@@ -16,7 +16,7 @@ tags:
 
 ## 関係者
 
-- [[]]
+- （関係者のノートへのリンク）
 
 ## スケジュール
 

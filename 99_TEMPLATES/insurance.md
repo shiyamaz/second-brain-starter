@@ -1,6 +1,6 @@
 ---
-created: {{date:YYYY-MM-DDTHH:mm:ssZ}}
-updated: {{date:YYYY-MM-DDTHH:mm:ssZ}}
+created: "{{date:YYYY-MM-DDTHH:mm:ssZ}}"
+updated: "{{date:YYYY-MM-DDTHH:mm:ssZ}}"
 type: insurance
 insurer:
 policy_number_last4:
@@ -45,5 +45,5 @@ tags:
 
 ## 関連
 
-- [[保険一覧]]
+- [[保険]]
 - [[もしもの時]]
